@@ -1,4 +1,4 @@
-# CMP_SC 3050 FP2024
+# CMP_SC 3050 FS2025
 
 # Assignment 5: Implement BFS and DFS: Submit to canvas
 
