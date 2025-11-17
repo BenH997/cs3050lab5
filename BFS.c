@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "MUCSGraph.h"
 #include "Queue.h"
 #include "BFS.h"
