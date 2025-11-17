@@ -9,7 +9,6 @@ void PrintBFS(Vertex * V, int countV, Edge * E, int countE, int s)
 { 
     printf("BFS:\n");
 
-    // Init color and distance from start(d)
     for (int i = 0; i < countV; i++) {
         (V + i)->color = WHITE;
         (V + i)->d = 0;
@@ -18,10 +17,11 @@ void PrintBFS(Vertex * V, int countV, Edge * E, int countE, int s)
     Queue * q = initQueue();
 
     // Mark start vertex as visited and enqueue it
+    Vertex * start = V + s - 1;
     enqueue(q, s - 1); 
-    (V + (s - 1))->color = BLACK;
+    start->color = BLACK;
 
-    printf("%d(%d) ", (V + (s - 1))->number, (V + (s - 1))->d);
+    printf("%d(%d) ", start->number, start->d);
 
     // Queue adjacent nodes
     while (q->head) {
